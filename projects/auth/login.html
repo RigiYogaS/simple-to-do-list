@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/projects/assets/css/output.css">
+    <title>Taskify - Login</title>
+</head>
+<body >
+    <main class="flex justify-center flex-col items-center w-full h-screen bg-gradient-to-br from-white via-blue-200 to-white">
+        <form id="form" class="flex flex-col border-2 border-gray-300 p-6 rounded-xl bg-white shadow-lg w-[30%]">
+            <a href="/projects/landing/index.html"><i class='bx bx-x text-2xl py-1 px-2 rounded-3xl bg-red-300 hover:bg-red-500 transition duration-300 text-white'></i></a>
+            <h1 class="text-center text-4xl font-bold mb-3">Login</h1>
+            <p class="text-center mb-5">Enter your details to Sign in to your account </p>
+            <label class="text-sm mb-1">Username</label>
+            <input 
+                id="username" type="text" placeholder="Enter your username" 
+                class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-5">
+            <label class="text-sm mb-1">Password</label>
+            <input 
+                id="password" type="password" placeholder="Enter your password" 
+                class="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-5 rl" > 
+            <small>This information will be securely saved as per the <span class="font-semibold">Terms of Service & Privacy Policy</span></small>
+            <button 
+                type="submit" 
+                class="bg-blue-500 text-white font-bold py-2 rounded-md hover:bg-blue-800 transition-all mt-5">
+                Login
+            </button>
+        </form>   
+    </main>
+    <!-- FOOTER -->
+    <footer class="bg-gray-700 w-full h-36 flex justify-center items-center text-white ">
+        <small class="text-base">© 2024 Taskify. All rights reserved.</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

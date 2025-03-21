@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="/projects/assets/css/output.css">
+   <title>Taskify - Account</title>
+</head>
+<body >
+   <main class="flex z-10">
+      <!-- ASIDE -->
+      <aside class="flex flex-col justify-between px-10 py-10  h-screen w-[25%] bg-blue-800 z-20 text-white rounded-br-3xl shadow-xl shadow-gray-500">
+         <a href="#" class="text-3xl font-bold text-white flex justify-center items-center mb-20">Taskify
+            <i class='bx bxs-notepad ml-2'></i>
+         </a>
+         <ul class="space-y-5 mb-auto text-lg">
+            <li class="py-2 px-3 flex justify-start items-center  w-full hover:bg-white hover:text-blue-800 duration-300 ease-in-out transform origin-center rounded-xl ">
+               <i class='bx bxs-dashboard text-xl mr-2'></i>
+               <a href="home.html">Home</a>
+            </li>
+            <li class="py-2 px-3 flex justify-start items-center w-full hover:bg-white hover:text-blue-800 duration-300 ease-in-out transform origin-center rounded-xl ">
+               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+               </svg>             
+               <a href="add.html">Add Task</a>
+            </li>
+            <li class="py-2 px-3 flex justify-start items-center w-full hover:bg-white hover:text-blue-800 duration-300 ease-in-out transform origin-center rounded-xl ">
+               <i class='bx bx-task text-xl mr-2' ></i>
+               <a href="completed.html">Completed Task</a>
+            </li>
+            <li class="py-2 px-3 flex justify-start items-center w-full hover:bg-white hover:text-blue-800 duration-300 ease-in-out transform origin-center rounded-xl ">
+               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mr-2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+               </svg>             
+               <a href="account.html">Account</a>
+            </li>
+         </ul>
+         <div class="text-xl flex justify-center align-middle">
+            <a href="/projects/landing/index.html" 
+               class="py-2 rounded-xl w-full flex justify-center items-center hover:bg-white hover:bg-opacity-80 hover:shadow-xl mx-2 hover:text-red-600 hover:font-semibold hover:scale-110 transition duration-300 ease-in-out transform">Logout
+               <i class='bx bx-exit'></i>
+            </a>
+         </div>
+      </aside>
+      <section class="w-full h-full flex flex-grow justify-end flex-col items-center py-6 px-6">
+         <div class="w-full flex justify-start flex-col border-b-2 border-gray-300 pb-4">
+            <h1 class="text-3xl font-bold mb-5 mx-auto">Account</h1>
+         </div>
+         <div class="py-5 my-5 border-2 border-gray-300 rounded-xl w-[50%] flex justify-center items-center flex-col shadow-lg">
+            <img src="../assets/img/profile.jpg" alt="Profile" class="h-36 rounded-full mb-5">
+            <label class="w-[95%] "> Username</label>
+            <p id="displayName" class="border-2 border-gray-300 p-4 rounded-xl w-[95%] mb-5"></p>
+            <label class="w-[95%] "> Password</label>
+            <p id="displayPassword" class="border-2 border-gray-300 p-4 rounded-xl w-[95%]"></p>
+         </div>
+      </section>
+   </main>
+
+   <script src="js/account.js"></script>
+</body>
+</html>
