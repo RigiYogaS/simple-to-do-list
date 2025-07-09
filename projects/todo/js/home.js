@@ -10,7 +10,7 @@ window.addEventListener("load", function() {
       localStorage.setItem("name", username);
       localStorage.setItem("password", password);
     } else {
-      window.location.href = "../todo/login.html";
+      window.location.href = "../auth/login.html";
     }
   });
 
