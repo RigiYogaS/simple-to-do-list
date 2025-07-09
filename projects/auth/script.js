@@ -12,7 +12,7 @@
       localStorage.setItem("name", name);
       localStorage.setItem("password", password);
 
-      window.location.href = "../todo/home.html";
+      window.location.href = "/projects/todo/home.html";
     } else {
       alert("Harap isi semua field!");
     }
